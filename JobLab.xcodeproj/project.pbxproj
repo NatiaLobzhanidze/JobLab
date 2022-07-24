@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		603A2AEB288B26820037328F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2AEA288B26820037328F /* AppDelegate.swift */; };
 		603A2AED288B26820037328F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2AEC288B26820037328F /* SceneDelegate.swift */; };
-		603A2AEF288B26820037328F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2AEE288B26820037328F /* ViewController.swift */; };
 		603A2AF2288B26820037328F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603A2AF0288B26820037328F /* Main.storyboard */; };
 		603A2AF5288B26820037328F /* JobLab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 603A2AF3288B26820037328F /* JobLab.xcdatamodeld */; };
 		603A2AF7288B26830037328F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603A2AF6288B26830037328F /* Assets.xcassets */; };
@@ -17,6 +16,16 @@
 		603A2B05288B26830037328F /* JobLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B04288B26830037328F /* JobLabTests.swift */; };
 		603A2B0F288B26830037328F /* JobLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B0E288B26830037328F /* JobLabUITests.swift */; };
 		603A2B11288B26830037328F /* JobLabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B10288B26830037328F /* JobLabUITestsLaunchTests.swift */; };
+		603A2B1E288B27230037328F /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B1D288B27230037328F /* WelcomePageViewController.swift */; };
+		603A2B23288B324D0037328F /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B22288B324D0037328F /* WelcomeCollectionViewCell.swift */; };
+		603A2B25288C07090037328F /* AddTitleToWelcomePageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B24288C07090037328F /* AddTitleToWelcomePageExtension.swift */; };
+		603A2B27288C12890037328F /* AddCollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B26288C12890037328F /* AddCollectionViewExtension.swift */; };
+		603A2B29288C526C0037328F /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B28288C526C0037328F /* WelcomeModel.swift */; };
+		603A2B2B288C5A900037328F /* AddButtontoWelcomePageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B2A288C5A900037328F /* AddButtontoWelcomePageExtension.swift */; };
+		603A2B2D288D329B0037328F /* CollectionView Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B2C288D329B0037328F /* CollectionView Extensions.swift */; };
+		603A2B2F288D32BA0037328F /* CollectionViewCell Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B2E288D32BA0037328F /* CollectionViewCell Extensions.swift */; };
+		603A2B31288D32C70037328F /* TableView extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B30288D32C70037328F /* TableView extensions.swift */; };
+		603A2B33288D32D00037328F /* TableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A2B32288D32D00037328F /* TableViewCellExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +49,6 @@
 		603A2AE7288B26820037328F /* JobLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		603A2AEA288B26820037328F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		603A2AEC288B26820037328F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		603A2AEE288B26820037328F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		603A2AF1288B26820037328F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		603A2AF4288B26820037328F /* JobLab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobLab.xcdatamodel; sourceTree = "<group>"; };
 		603A2AF6288B26830037328F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +59,16 @@
 		603A2B0A288B26830037328F /* JobLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		603A2B0E288B26830037328F /* JobLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobLabUITests.swift; sourceTree = "<group>"; };
 		603A2B10288B26830037328F /* JobLabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobLabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		603A2B1D288B27230037328F /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		603A2B22288B324D0037328F /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		603A2B24288C07090037328F /* AddTitleToWelcomePageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTitleToWelcomePageExtension.swift; sourceTree = "<group>"; };
+		603A2B26288C12890037328F /* AddCollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionViewExtension.swift; sourceTree = "<group>"; };
+		603A2B28288C526C0037328F /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
+		603A2B2A288C5A900037328F /* AddButtontoWelcomePageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtontoWelcomePageExtension.swift; sourceTree = "<group>"; };
+		603A2B2C288D329B0037328F /* CollectionView Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionView Extensions.swift"; sourceTree = "<group>"; };
+		603A2B2E288D32BA0037328F /* CollectionViewCell Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionViewCell Extensions.swift"; sourceTree = "<group>"; };
+		603A2B30288D32C70037328F /* TableView extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView extensions.swift"; sourceTree = "<group>"; };
+		603A2B32288D32D00037328F /* TableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +119,11 @@
 		603A2AE9288B26820037328F /* JobLab */ = {
 			isa = PBXGroup;
 			children = (
-				603A2AEA288B26820037328F /* AppDelegate.swift */,
-				603A2AEC288B26820037328F /* SceneDelegate.swift */,
-				603A2AEE288B26820037328F /* ViewController.swift */,
-				603A2AF0288B26820037328F /* Main.storyboard */,
+				603A2B34288D84990037328F /* Extensions */,
+				603A2B20288B27A30037328F /* SupportingFiles */,
+				603A2B1F288B27910037328F /* WelcomePage */,
 				603A2AF6288B26830037328F /* Assets.xcassets */,
+				603A2AF0288B26820037328F /* Main.storyboard */,
 				603A2AF8288B26830037328F /* LaunchScreen.storyboard */,
 				603A2AFB288B26830037328F /* Info.plist */,
 				603A2AF3288B26820037328F /* JobLab.xcdatamodeld */,
@@ -128,6 +146,55 @@
 				603A2B10288B26830037328F /* JobLabUITestsLaunchTests.swift */,
 			);
 			path = JobLabUITests;
+			sourceTree = "<group>";
+		};
+		603A2B1F288B27910037328F /* WelcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				603A2B21288B30690037328F /* CollectionViewCell */,
+				603A2B1D288B27230037328F /* WelcomePageViewController.swift */,
+				603A2B24288C07090037328F /* AddTitleToWelcomePageExtension.swift */,
+				603A2B28288C526C0037328F /* WelcomeModel.swift */,
+				603A2B2A288C5A900037328F /* AddButtontoWelcomePageExtension.swift */,
+			);
+			path = WelcomePage;
+			sourceTree = "<group>";
+		};
+		603A2B20288B27A30037328F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				603A2AEA288B26820037328F /* AppDelegate.swift */,
+				603A2AEC288B26820037328F /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		603A2B21288B30690037328F /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				603A2B22288B324D0037328F /* WelcomeCollectionViewCell.swift */,
+				603A2B26288C12890037328F /* AddCollectionViewExtension.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		603A2B34288D84990037328F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				603A2B35288D84AD0037328F /* Collection_Table_Extenshions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		603A2B35288D84AD0037328F /* Collection_Table_Extenshions */ = {
+			isa = PBXGroup;
+			children = (
+				603A2B2C288D329B0037328F /* CollectionView Extensions.swift */,
+				603A2B2E288D32BA0037328F /* CollectionViewCell Extensions.swift */,
+				603A2B30288D32C70037328F /* TableView extensions.swift */,
+				603A2B32288D32D00037328F /* TableViewCellExtensions.swift */,
+			);
+			path = Collection_Table_Extenshions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +328,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				603A2AEF288B26820037328F /* ViewController.swift in Sources */,
+				603A2B23288B324D0037328F /* WelcomeCollectionViewCell.swift in Sources */,
 				603A2AF5288B26820037328F /* JobLab.xcdatamodeld in Sources */,
+				603A2B29288C526C0037328F /* WelcomeModel.swift in Sources */,
 				603A2AEB288B26820037328F /* AppDelegate.swift in Sources */,
+				603A2B31288D32C70037328F /* TableView extensions.swift in Sources */,
+				603A2B27288C12890037328F /* AddCollectionViewExtension.swift in Sources */,
+				603A2B2D288D329B0037328F /* CollectionView Extensions.swift in Sources */,
+				603A2B33288D32D00037328F /* TableViewCellExtensions.swift in Sources */,
 				603A2AED288B26820037328F /* SceneDelegate.swift in Sources */,
+				603A2B2B288C5A900037328F /* AddButtontoWelcomePageExtension.swift in Sources */,
+				603A2B2F288D32BA0037328F /* CollectionViewCell Extensions.swift in Sources */,
+				603A2B1E288B27230037328F /* WelcomePageViewController.swift in Sources */,
+				603A2B25288C07090037328F /* AddTitleToWelcomePageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
