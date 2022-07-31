@@ -14,9 +14,9 @@ class WelcomePageViewController: UIViewController {
         mypageControl.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(mypageControl)
         mypageControl.addTarget(self, action: #selector(self.pageControllerAction(_:)), for: .touchUpInside)
-        //mypageControl.addTarget(self, action: #selector(getter: nextPageBtn), for: .touchUpInside)
         return mypageControl
     }()
+    
     @IBOutlet open weak var pageControl: UIPageControl? {
            didSet {
                pageControl?.addTarget(self, action: #selector(WelcomePageViewController.nextPage(_:)), for: .valueChanged)
@@ -62,7 +62,8 @@ class WelcomePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .white
+        
         addNameLabel()
         addCollectionView()
         addPageController()
@@ -70,26 +71,14 @@ class WelcomePageViewController: UIViewController {
    
     }
     
-  func addPageController(){
-      mypageControl.numberOfPages = 3
-      mypageControl.contentHorizontalAlignment = .left
-      mypageControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-      mypageControl.heightAnchor.constraint(equalToConstant: 45).isActive = true
-      mypageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60).isActive = true
-    }
+
   
-    @IBAction func nextPage(_ sender: Any) {
-        changePage(on: collectionView, Vc: self)
-    }
-    @IBAction func pageControllerAction(_ sender: UIPageControl) {
-           self.collectionView.scrollToItem(at: IndexPath(row: currentPage, section: 0), at: .centeredHorizontally, animated: true)
-        changePage(on: collectionView, Vc: self)
-    }
+  
     
-    var currentPage = 0 {
+    var currentPage : Int = 0 {
         didSet {
             mypageControl.currentPage = currentPage
-            if currentPage >= WelcomeModel.pages.count - 1 {
+            if  mypageControl.currentPage == WelcomeModel.pages.count - 1 {
                 nextPageBtn.setTitle("START", for: .normal)
                 print(currentPage)
             } else {

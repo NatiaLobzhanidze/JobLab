@@ -43,7 +43,7 @@ extension WelcomePageViewController: UICollectionViewDelegate, UICollectionViewD
 
 
     func changePage (on collectionView: UICollectionView, Vc: UIViewController){
-        if currentPage == WelcomeModel.pages.count - 1 {
+        if currentPage == WelcomeModel.pages.count - 1  {
 //            let sb = UIStoryboard(name: "Registration", bundle: nil)
 //            let vc = sb.instantiateViewController(withIdentifier: "registrationNC")as! UINavigationController
 //            vc.modalPresentationStyle = .fullScreen
