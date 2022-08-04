@@ -10,23 +10,28 @@ import UIKit
 class AuthorizationViewController: UIViewController {
 
     //headline label
-    
     let headlineLB: UILabel = UILabel()
-    
     
     //Welcomeimages
     let posterView: UIImageView = UIImageView()
-//stackview
-    let stackView: UIStackView = UIStackView()
     
+    //stackview
+   lazy var  stackView: UIStackView = {
+        let stackView = UIStackView()
+       stackView.translatesAutoresizingMaskIntoConstraints = false
+       stackView.axis = NSLayoutConstraint.Axis.vertical
+       stackView.distribution = .fillEqually
+       view.addSubview(stackView)
+       return stackView
+    }()
+        
     //buttons signIng or sign up
     let logInBtn: UIButton = UIButton()
     let signUpBtn: UIButton = UIButton()
     
     //use as guest
-    let guestBtn: UIButton = UIButton()
-    
-    
+    let horizontalStackView = UIStackView()
+    let horizontalStackView2 = UIStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,40 +44,40 @@ class AuthorizationViewController: UIViewController {
         addStackview()
     }
     
+    
+   
+
+    
     func createButtons() {
         logInBtn.setTitle("Log in ", for: .normal)
         signUpBtn.setTitle("Sign Up ", for: .normal)
-        guestBtn.setTitle("visit as guest", for: .normal)
+      
      
-        logInBtn.heightAnchor.constraint(equalToConstant: 45).isActive = true
-        signUpBtn.heightAnchor.constraint(equalToConstant: 45).isActive = true
-        guestBtn.heightAnchor.constraint(equalToConstant: 45).isActive = true
-        
-        logInBtn.widthAnchor.constraint(equalToConstant: 145).isActive = true
-        signUpBtn.widthAnchor.constraint(equalToConstant: 145).isActive = true
-        guestBtn.widthAnchor.constraint(equalToConstant: 145).isActive = true
-        
         logInBtn.backgroundColor = .blue
-    
+        logInBtn.addTarget(self, action: #selector(tapLogInBtn), for: .touchUpInside)
         signUpBtn.backgroundColor = .blue
-        
-        guestBtn.backgroundColor = .blue
+       // guestBtn.setTitleColor(.blue, for: .normal)
+    
+    }
+    
+    @objc func tapLogInBtn() {
+        let vc = LogInViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func addStackview() {
+     
+        stackView.isBaselineRelativeArrangement = false
+        stackView.spacing = 15
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = NSLayoutConstraint.Axis.vertical
-        stackView.distribution = .equalSpacing
-        stackView.alignment = .center
-        stackView.spacing = 20
-        self.view.addSubview(stackView)
-        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30 ).isActive = true
-        stackView.topAnchor.constraint(equalTo: posterView.bottomAnchor, constant:  30).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
+    
         stackView.addArrangedSubview(logInBtn)
         stackView.addArrangedSubview(signUpBtn)
-        stackView.addArrangedSubview(guestBtn)
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50 ).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30).isActive = true
+    
+        
     
     }
     
@@ -83,7 +88,8 @@ class AuthorizationViewController: UIViewController {
         posterView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
         posterView.topAnchor.constraint(equalTo: headlineLB.bottomAnchor, constant: 30 ).isActive = true
         posterView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
-        posterView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        posterView.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -50).isActive = true
+//        posterView.heightAnchor.constraint(equalToConstant: 280).isActive = true
         
         
     }
@@ -91,7 +97,6 @@ class AuthorizationViewController: UIViewController {
     func addHeadlineLb() {
        
         headlineLB.translatesAutoresizingMaskIntoConstraints = false
-        let job = "job"
         headlineLB.text = "Welcome to JobLab"
         headlineLB.textColor = .blue
         headlineLB.textAlignment = .center
