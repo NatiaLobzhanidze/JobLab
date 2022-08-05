@@ -13,7 +13,7 @@ class LogInViewController: UIViewController {
     let headlineLB: UILabel =  UILabel()
     
     
-   // lable
+    // lable
     let maillLb: UILabel = UILabel()
     //textField
     let maillTextFld: UITextField = UITextField()
@@ -29,9 +29,15 @@ class LogInViewController: UIViewController {
     
     /// 2 lables
     ///
-    let forgetPassordLb: UIButton = UIButton()
+    lazy var goToSignUp: UIButton = {
+        let goToSignUp = UIButton()
+        goToSignUp.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(goToSignUp)
+        goToSignUp.setTitleColor(.blue, for: .normal)
+        return goToSignUp
+    }()
     ///
-    let privacyLb: UIButton = UIButton()
+    let notMemberLb: UILabel = UILabel()
     
     
     lazy var firstStackview: UIStackView = {
@@ -56,9 +62,17 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(headlineLB)
+        view.addSubview(logedInButton)
+        view.addSubview(notMemberLb)
         addHeadlineTitle()
         setupView()
+        addButton()
+        addGoToLb()
+        addGoToSignUpButton()
     }
+    
+    
+    
     
     func setupView() {
         
@@ -73,6 +87,6 @@ class LogInViewController: UIViewController {
         secondStackview.addArrangedSubview(passwordLbTextFld)
     }
     
-   
-  
+    
+    
 }

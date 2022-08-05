@@ -33,6 +33,13 @@
 		60D71CA0289BBDB0009A54AA /* AddTextfieldsWithLables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71C9F289BBDB0009A54AA /* AddTextfieldsWithLables.swift */; };
 		60D71CA2289BC38C009A54AA /* AddStackViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CA1289BC38C009A54AA /* AddStackViews.swift */; };
 		60D71CA4289C079E009A54AA /* AddHeadlineTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CA3289C079E009A54AA /* AddHeadlineTitle.swift */; };
+		60D71CC5289D8A15009A54AA /* AddHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CC4289D8A15009A54AA /* AddHeadline.swift */; };
+		60D71CC7289D8A27009A54AA /* AddStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CC6289D8A27009A54AA /* AddStackView.swift */; };
+		60D71CC9289D8A36009A54AA /* AddTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CC8289D8A35009A54AA /* AddTextFields.swift */; };
+		60D71CCB289D8A4A009A54AA /* AddSegmentedControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CCA289D8A4A009A54AA /* AddSegmentedControll.swift */; };
+		60D71CCD289D8A58009A54AA /* AddRegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CCC289D8A58009A54AA /* AddRegisterButton.swift */; };
+		60D71CCF289D8ACE009A54AA /* AddLogInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CCE289D8ACE009A54AA /* AddLogInButton.swift */; };
+		60D71CD1289D8ADC009A54AA /* GoToSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CD0289D8ADC009A54AA /* GoToSignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +90,13 @@
 		60D71C9F289BBDB0009A54AA /* AddTextfieldsWithLables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextfieldsWithLables.swift; sourceTree = "<group>"; };
 		60D71CA1289BC38C009A54AA /* AddStackViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStackViews.swift; sourceTree = "<group>"; };
 		60D71CA3289C079E009A54AA /* AddHeadlineTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHeadlineTitle.swift; sourceTree = "<group>"; };
+		60D71CC4289D8A15009A54AA /* AddHeadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHeadline.swift; sourceTree = "<group>"; };
+		60D71CC6289D8A27009A54AA /* AddStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStackView.swift; sourceTree = "<group>"; };
+		60D71CC8289D8A35009A54AA /* AddTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextFields.swift; sourceTree = "<group>"; };
+		60D71CCA289D8A4A009A54AA /* AddSegmentedControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSegmentedControll.swift; sourceTree = "<group>"; };
+		60D71CCC289D8A58009A54AA /* AddRegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegisterButton.swift; sourceTree = "<group>"; };
+		60D71CCE289D8ACE009A54AA /* AddLogInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLogInButton.swift; sourceTree = "<group>"; };
+		60D71CD0289D8ADC009A54AA /* GoToSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToSignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +292,8 @@
 				60D71C9F289BBDB0009A54AA /* AddTextfieldsWithLables.swift */,
 				60D71CA1289BC38C009A54AA /* AddStackViews.swift */,
 				60D71CA3289C079E009A54AA /* AddHeadlineTitle.swift */,
+				60D71CCE289D8ACE009A54AA /* AddLogInButton.swift */,
+				60D71CD0289D8ADC009A54AA /* GoToSignUp.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -286,6 +302,11 @@
 			isa = PBXGroup;
 			children = (
 				60D71C9B289BB398009A54AA /* SignUpViewController.swift */,
+				60D71CC4289D8A15009A54AA /* AddHeadline.swift */,
+				60D71CC6289D8A27009A54AA /* AddStackView.swift */,
+				60D71CC8289D8A35009A54AA /* AddTextFields.swift */,
+				60D71CCA289D8A4A009A54AA /* AddSegmentedControll.swift */,
+				60D71CCC289D8A58009A54AA /* AddRegisterButton.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -425,6 +446,7 @@
 				603A2AF5288B26820037328F /* JobLab.xcdatamodeld in Sources */,
 				603A2B3C288D95070037328F /* PageControllConfiguration.swift in Sources */,
 				603A2B42289464520037328F /* AuthorizationViewController.swift in Sources */,
+				60D71CD1289D8ADC009A54AA /* GoToSignUp.swift in Sources */,
 				60D71C9E289BB3A7009A54AA /* LogInViewController.swift in Sources */,
 				603A2B29288C526C0037328F /* WelcomeModel.swift in Sources */,
 				603A2AEB288B26820037328F /* AppDelegate.swift in Sources */,
@@ -435,12 +457,18 @@
 				603A2B33288D32D00037328F /* TableViewCellExtensions.swift in Sources */,
 				60D71C9C289BB398009A54AA /* SignUpViewController.swift in Sources */,
 				603A2AED288B26820037328F /* SceneDelegate.swift in Sources */,
+				60D71CC5289D8A15009A54AA /* AddHeadline.swift in Sources */,
+				60D71CCF289D8ACE009A54AA /* AddLogInButton.swift in Sources */,
 				60D71CA2289BC38C009A54AA /* AddStackViews.swift in Sources */,
 				603A2B2B288C5A900037328F /* AddButtontoWelcomePageExtension.swift in Sources */,
 				603A2B2F288D32BA0037328F /* CollectionViewCell Extensions.swift in Sources */,
 				603A2B1E288B27230037328F /* WelcomePageViewController.swift in Sources */,
+				60D71CC9289D8A36009A54AA /* AddTextFields.swift in Sources */,
+				60D71CCD289D8A58009A54AA /* AddRegisterButton.swift in Sources */,
 				60D71CA0289BBDB0009A54AA /* AddTextfieldsWithLables.swift in Sources */,
 				603A2B25288C07090037328F /* AddTitleToWelcomePageExtension.swift in Sources */,
+				60D71CC7289D8A27009A54AA /* AddStackView.swift in Sources */,
+				60D71CCB289D8A4A009A54AA /* AddSegmentedControll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

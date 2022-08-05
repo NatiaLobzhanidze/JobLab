@@ -8,11 +8,62 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
+    enum SegmentType: String {
+        case business
+        case personal
+    }
+    
+    //headline
+    let headlineLB: UILabel = UILabel()
+    
+    // segmented contorl
+    
+    let segmentedControl = UISegmentedControl(items: ["Personal User", "Bussiness User" ])
+    
+    let stackView = UIStackView()
+    
+    // textfields
+    
+    //username
+    let userName = UITextField()
+    
+    // email
+    let userMail = UITextField()
+    //password
+    let userPassword = UITextField()
+    //repeate password
+    let repeatePassword = UITextField()
+    
+     //textfield for id
+    let companyName = UITextField()
+    let companyId = UITextField()
+    
+    let registerBtn = UIButton()
+    
+    var currentPageType: SegmentType = .personal {
+        didSet{
+            setUpViewFor(pageType: currentPageType)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        view.addSubview(headlineLB)
+        view.addSubview(segmentedControl)
+        view.addSubview(stackView)
+        view.addSubview(registerBtn)
+        setUpViewController()
+       
     }
 
+    func setUpViewController() {
+        addHeadlineTitle()
+        addSegmentedControll()
+        addStackView()
+        maketextFld()
+        setUpViewFor(pageType: .personal)
+        addRegisterButton()
+    }
 }
