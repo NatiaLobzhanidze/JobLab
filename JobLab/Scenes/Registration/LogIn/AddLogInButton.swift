@@ -25,8 +25,8 @@ extension LogInViewController {
     }
     
     @objc func tapedLogIn() {
-    // let vc = HomeViewController()
-        //navigationController?.pushViewController(vc, animated: true)
+     let vc = HomeViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }

@@ -40,6 +40,7 @@
 		60D71CCD289D8A58009A54AA /* AddRegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CCC289D8A58009A54AA /* AddRegisterButton.swift */; };
 		60D71CCF289D8ACE009A54AA /* AddLogInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CCE289D8ACE009A54AA /* AddLogInButton.swift */; };
 		60D71CD1289D8ADC009A54AA /* GoToSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CD0289D8ADC009A54AA /* GoToSignUp.swift */; };
+		60D71CD4289D8BFB009A54AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CD3289D8BFB009A54AA /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		60D71CCC289D8A58009A54AA /* AddRegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegisterButton.swift; sourceTree = "<group>"; };
 		60D71CCE289D8ACE009A54AA /* AddLogInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLogInButton.swift; sourceTree = "<group>"; };
 		60D71CD0289D8ADC009A54AA /* GoToSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToSignUp.swift; sourceTree = "<group>"; };
+		60D71CD3289D8BFB009A54AA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 		603A2B3D28943BD40037328F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				60D71CD2289D8BE4009A54AA /* HomePage */,
 				603A2B3E289463360037328F /* Registration */,
 				603A2B1F288B27910037328F /* WelcomePage */,
 			);
@@ -309,6 +312,14 @@
 				60D71CCC289D8A58009A54AA /* AddRegisterButton.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		60D71CD2289D8BE4009A54AA /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				60D71CD3289D8BFB009A54AA /* HomeViewController.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,6 +472,7 @@
 				60D71CCF289D8ACE009A54AA /* AddLogInButton.swift in Sources */,
 				60D71CA2289BC38C009A54AA /* AddStackViews.swift in Sources */,
 				603A2B2B288C5A900037328F /* AddButtontoWelcomePageExtension.swift in Sources */,
+				60D71CD4289D8BFB009A54AA /* HomeViewController.swift in Sources */,
 				603A2B2F288D32BA0037328F /* CollectionViewCell Extensions.swift in Sources */,
 				603A2B1E288B27230037328F /* WelcomePageViewController.swift in Sources */,
 				60D71CC9289D8A36009A54AA /* AddTextFields.swift in Sources */,
