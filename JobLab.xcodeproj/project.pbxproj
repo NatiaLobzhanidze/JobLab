@@ -45,6 +45,8 @@
 		60D71CE1289E5C95009A54AA /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CE0289E5C95009A54AA /* AlertMessages.swift */; };
 		60D71CE3289FB98A009A54AA /* AddHeadlinetoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CE2289FB98A009A54AA /* AddHeadlinetoView.swift */; };
 		60D71CE5289FBD0F009A54AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60D71CE4289FBD0F009A54AA /* GoogleService-Info.plist */; };
+		60D71CE7289FD36B009A54AA /* AddImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D71CE6289FD36B009A54AA /* AddImageView.swift */; };
+		60D71CE8289FD867009A54AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603A2AF6288B26830037328F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,7 @@
 		60D71CE0289E5C95009A54AA /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 		60D71CE2289FB98A009A54AA /* AddHeadlinetoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHeadlinetoView.swift; sourceTree = "<group>"; };
 		60D71CE4289FBD0F009A54AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60D71CE6289FD36B009A54AA /* AddImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,13 +163,13 @@
 		603A2AE9288B26820037328F /* JobLab */ = {
 			isa = PBXGroup;
 			children = (
-				60D71CE4289FBD0F009A54AA /* GoogleService-Info.plist */,
+				603A2AF6288B26830037328F /* Assets.xcassets */,
 				603A2B20288B27A30037328F /* SupportingFiles */,
 				603A2B34288D84990037328F /* Extensions */,
 				603A2B3D28943BD40037328F /* Scenes */,
-				603A2AF6288B26830037328F /* Assets.xcassets */,
 				603A2AF0288B26820037328F /* Main.storyboard */,
 				603A2AF8288B26830037328F /* LaunchScreen.storyboard */,
+				60D71CE4289FBD0F009A54AA /* GoogleService-Info.plist */,
 				603A2AFB288B26830037328F /* Info.plist */,
 				603A2AF3288B26820037328F /* JobLab.xcdatamodeld */,
 			);
@@ -333,6 +336,7 @@
 			children = (
 				60D71CD3289D8BFB009A54AA /* HomeViewController.swift */,
 				60D71CE2289FB98A009A54AA /* AddHeadlinetoView.swift */,
+				60D71CE6289FD36B009A54AA /* AddImageView.swift */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -449,6 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D71CE8289FD867009A54AA /* Assets.xcassets in Resources */,
 				60D71CE5289FBD0F009A54AA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +499,7 @@
 				603A2AED288B26820037328F /* SceneDelegate.swift in Sources */,
 				60D71CC5289D8A15009A54AA /* AddHeadline.swift in Sources */,
 				60D71CCF289D8ACE009A54AA /* AddLogInButton.swift in Sources */,
+				60D71CE7289FD36B009A54AA /* AddImageView.swift in Sources */,
 				60D71CA2289BC38C009A54AA /* AddStackViews.swift in Sources */,
 				603A2B2B288C5A900037328F /* AddButtontoWelcomePageExtension.swift in Sources */,
 				60D71CD4289D8BFB009A54AA /* HomeViewController.swift in Sources */,

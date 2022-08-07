@@ -12,12 +12,17 @@ class HomeViewController: UIViewController {
 // Headline
     let headlineLB: UILabel = UILabel()
     
+    let logoImage = UIImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
         view.addSubview(headlineLB)
+        view.addSubview(logoImage)
         addHeadlineTitle()
+        addLogoImage()
+        
     }
     
     

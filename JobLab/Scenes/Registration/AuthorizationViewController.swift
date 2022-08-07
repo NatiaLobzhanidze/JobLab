@@ -91,6 +91,7 @@ class AuthorizationViewController: UIViewController {
         
         posterView.translatesAutoresizingMaskIntoConstraints = false
         posterView.image = UIImage(named: "job")
+        posterView.alpha = 1
         posterView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
         posterView.topAnchor.constraint(equalTo: headlineLB.bottomAnchor, constant: 30 ).isActive = true
         posterView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
