@@ -55,8 +55,9 @@ class AuthorizationViewController: UIViewController {
      
         logInBtn.backgroundColor = .blue
         logInBtn.addTarget(self, action: #selector(tapLogInBtn), for: .touchUpInside)
+        signUpBtn.addTarget(self, action: #selector(tappedsignUpBtn), for: .touchUpInside)
         signUpBtn.backgroundColor = .blue
-       // guestBtn.setTitleColor(.blue, for: .normal)
+       
     
     }
     
@@ -65,6 +66,10 @@ class AuthorizationViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @objc func tappedsignUpBtn() {
+        let vc = SignUpViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
     func addStackview() {
      
         stackView.isBaselineRelativeArrangement = false
@@ -73,6 +78,7 @@ class AuthorizationViewController: UIViewController {
     
         stackView.addArrangedSubview(logInBtn)
         stackView.addArrangedSubview(signUpBtn)
+        stackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50 ).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
         stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30).isActive = true
@@ -84,7 +90,7 @@ class AuthorizationViewController: UIViewController {
     func addPosterView() {
         
         posterView.translatesAutoresizingMaskIntoConstraints = false
-        posterView.image = UIImage(named: "job1")
+        posterView.image = UIImage(named: "job")
         posterView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
         posterView.topAnchor.constraint(equalTo: headlineLB.bottomAnchor, constant: 30 ).isActive = true
         posterView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true

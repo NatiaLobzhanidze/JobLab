@@ -1,0 +1,30 @@
+//
+//  AddHeadline.swift
+//  JobLab
+//
+//  Created by Natia's Mac on 07.08.22.
+//
+
+import Foundation
+import UIKit
+
+extension HomeViewController {
+    
+    
+    func addHeadlineTitle(){
+        headlineLB.translatesAutoresizingMaskIntoConstraints = false
+        headlineLB.text = "JobLab"
+        headlineLB.textColor = .blue
+        headlineLB.textAlignment = .center
+        headlineLB.font = .systemFont(ofSize: 35, weight: .bold)
+        
+        // constraints
+        headlineLB.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
+        
+        headlineLB.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30).isActive = true
+        headlineLB.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
+        headlineLB.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        
+
+    }
+}

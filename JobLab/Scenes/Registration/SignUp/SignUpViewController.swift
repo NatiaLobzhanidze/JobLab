@@ -6,14 +6,13 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 class SignUpViewController: UIViewController {
     
-    enum SegmentType: String {
-        case business
-        case personal
-    }
-    
+  
     //headline
     let headlineLB: UILabel = UILabel()
     

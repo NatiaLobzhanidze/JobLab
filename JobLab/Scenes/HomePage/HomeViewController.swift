@@ -8,12 +8,18 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+// Headline
+    let headlineLB: UILabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
+        view.addSubview(headlineLB)
+        addHeadlineTitle()
     }
+    
     
 
 

@@ -10,6 +10,11 @@ import UIKit
 
 extension SignUpViewController {
 
+    enum SegmentType: String {
+        case business
+        case personal
+    }
+    
     
     func addSegmentedControll() {
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false

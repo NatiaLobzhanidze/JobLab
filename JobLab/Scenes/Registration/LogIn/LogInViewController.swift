@@ -6,12 +6,12 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
     
     //Headline
     let headlineLB: UILabel =  UILabel()
-    
     
     // lable
     let maillLb: UILabel = UILabel()
@@ -60,21 +60,52 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        setUpView()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        maillTextFld.becomeFirstResponder()
+    }
+    
+    
+    func setUpView() {
+        
         view.backgroundColor = .white
         view.addSubview(headlineLB)
         view.addSubview(logedInButton)
         view.addSubview(notMemberLb)
+        
         addHeadlineTitle()
-        setupView()
+        setupStackView()
         addButton()
         addGoToLb()
         addGoToSignUpButton()
+        logedInButton.addTarget(self, action: #selector(tapedLogInBtn), for: .touchUpInside)
     }
     
     
-    
-    
-    func setupView() {
+    @objc func tapedLogInBtn() {
+        let mail = maillTextFld.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordLbTextFld.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        
+        Auth.auth().signIn(withEmail: mail, password: password) {
+            (result, error) in
+            if error != nil {
+                self.showAlert(alertText: "Error message", alertMessage: "Error while log in "
+                               , addActionTitle: "ok")
+            } else {
+                let vc = HomeViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
+                
+            }
+        }
+        
+    }
+    func setupStackView() {
         
         addMyStackView(top: nil, otherTop: headlineLB, constant: 50)
         createLbandTextFld(with: maillTextFld, lableName: "E-mail", titleLB: maillLb, placeholder: "Enter your mail")
